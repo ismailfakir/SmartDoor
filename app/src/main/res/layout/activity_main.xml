@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="smartdoor.cloudcentrik.net.smartdoor.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/device_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@color/colorPrimary"
+            android:drawableLeft="@drawable/ic_settings_remote_white_48px"
+            android:gravity="center_horizontal"
+            android:padding="1dp"
+            android:text="Device Name"
+            android:textColor="#fff"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/device_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:background="@color/colorPrimary"
+            android:gravity="center_horizontal"
+            android:padding="1dp"
+            android:text="Status"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@color/textViewBackgroundColorNormal"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/HeadingTextView"
+                android:text="Temparature" />
+
+            <TextView
+                android:id="@+id/device_temperature"
+                style="@style/NormalTextView"
+                android:text="0c" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@color/textViewBackgroundColorNormal"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/HeadingTextView"
+                android:text="Light Level" />
+
+            <TextView
+                android:id="@+id/device_lightMeter"
+                style="@style/NormalTextView"
+                android:text="0Flux" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@color/textViewBackgroundColorNormal"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/HeadingTextView"
+                android:text="Humidity" />
+
+            <TextView
+                android:id="@+id/device_humidity"
+                style="@style/NormalTextView"
+                android:text="0%" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@color/textViewBackgroundColorNormal"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/HeadingTextView"
+                android:text="Door Lock" />
+
+            <TextView
+                android:id="@+id/device_door"
+                style="@style/NormalTextView"
+                android:text="Unknown" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button_update_data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Update Data"
+                android:theme="@style/NormalButton" />
+
+            <Button
+                android:id="@+id/button_clear_data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Clear"
+                android:theme="@style/NormalButton" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

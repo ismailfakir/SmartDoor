@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">SmartDoor</string>
+    <!--<string name="oauth_client_id">(client ID string goes here)</string>
+    <string name="oauth_client_secret">(client secret 40-char hex string goes here)</string>-->
+    <string name="access_token">7f4e00f06782650ae25b6c181ea979243115c5cf</string>
+</resources>

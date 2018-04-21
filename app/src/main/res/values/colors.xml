@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FF9800</color>
+    <color name="colorPrimaryDark">#E65100</color>
+    <color name="colorAccent">#03A9F4</color>
+
+    <!--Text view normal colours-->
+    <color name="textViewForegroudnColorNormal">#000000</color>
+    <color name="textViewBackgroundColorNormal">#FFD180</color>
+
+    <color name="colorPurple">#9575CD</color>
+    <color name="colorTial">#009688</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorPink">#E91E63</color>
+
+    <color name="colorBlueLight">#0091EA</color>
+    <color name="colorBlueDark">#01579B</color>
+    <color name="colorBlue">#2962FF</color>
+
+    <color name="colorRedLight">#FF1744</color>
+    <color name="colorRedDark">#D50000</color>
+    <color name="colorRed">#F44336</color>
+
+    <color name="colorGreenLight">#8BC34A</color>
+    <color name="colorGreenDark">#1B5E20</color>
+    <color name="colorGreen">#558B2F</color>
+
+    <color name="colorYellowLight">#FFFF00</color>
+    <color name="colorYellowDark">#FFD600</color>
+    <color name="colorYellow">#FFEA00</color>
+
+    <color name="colorBrownLight">#A1887F</color>
+    <color name="colorBrownDark">#8D6E63</color>
+    <color name="colorBrown">#795548</color>
+
+</resources>
