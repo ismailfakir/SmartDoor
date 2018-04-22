@@ -117,6 +117,30 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
+            <ToggleButton
+                android:id="@+id/button_play_melody"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textOff="Melody ON"
+                android:textOn="Melody OFF"
+                android:theme="@style/SencondaryButton" />
+
+            <ToggleButton
+                android:id="@+id/button_turn_light"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textOff="Light ON"
+                android:textOn="Liht OFF"
+                android:theme="@style/SencondaryButton" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
             <Button
                 android:id="@+id/button_update_data"
                 android:layout_width="match_parent"

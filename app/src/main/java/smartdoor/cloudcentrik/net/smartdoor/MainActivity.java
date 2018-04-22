@@ -13,7 +13,10 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CompoundButton;
 import android.widget.TextView;
+import android.widget.Toast;
+import android.widget.ToggleButton;
 
 import java.io.IOException;
 import java.util.List;
@@ -31,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
 
     private TextView textDeviceName, textDeviceStatus, textTemperature,textLight,textHumidity,textDoorLock;
     private Button buttonUpdateData,buttonClearData;
+    private ToggleButton buttonPlayMelody,buttonTurnLight;
     private static double temperatureReading = 0.0;
     private static double humidityReading = 0.0;
     private static int lightReading = 0;
@@ -49,6 +53,34 @@ public class MainActivity extends AppCompatActivity {
         textLight = (TextView) findViewById(R.id.device_lightMeter);
         textHumidity = (TextView) findViewById(R.id.device_humidity);
         textDoorLock = (TextView) findViewById(R.id.device_door);
+
+        //button play melody
+        buttonPlayMelody=(ToggleButton)findViewById(R.id.button_play_melody);
+        buttonPlayMelody.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if (isChecked) {
+                    // The toggle is enabled
+                    UiUtils.showInfo("Playing music on",getApplicationContext());
+                } else {
+                    // The toggle is disabled
+                    UiUtils.showInfo("Playing music off",getApplicationContext());
+                }
+            }
+        });
+
+        //button turn light
+        buttonTurnLight=(ToggleButton)findViewById(R.id.button_turn_light);
+        buttonTurnLight.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if (isChecked) {
+                    // The toggle is enabled
+                    Toast.makeText(getApplicationContext(),"Turning light on", Toast.LENGTH_LONG).show();
+                } else {
+                    // The toggle is disabled
+                    Toast.makeText(getApplicationContext(),"Turning light off", Toast.LENGTH_LONG).show();
+                }
+            }
+        });
 
         //button clear data
         buttonClearData=(Button)findViewById(R.id.button_clear_data);
